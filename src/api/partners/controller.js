@@ -141,6 +141,8 @@ exports.getPartnerById = async (req, res) => {
       return res
         .status(404)
         .json({ success: false, message: "Partner not found" });
+    partner.leadTypes = partner.leadTypes.filter((lt) => lt.typeId !== null);
+
     res.status(200).json({
       success: true,
       message: "Partner details fetched successfully.",
