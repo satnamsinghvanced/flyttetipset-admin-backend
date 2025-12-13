@@ -12,6 +12,23 @@ const countySchema = new mongoose.Schema(
     },
     excerpt: { type: String },
     icon: { type: String },
+    companies: [
+      {
+        companyId: {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: "Company",
+          required: true,
+        },
+        rank: {
+          type: Number,
+          default: 0, // order inside this place
+        },
+        isRecommended: {
+          type: Boolean,
+          default: false,
+        },
+      },
+    ],
   },
   { timestamps: true }
 );
