@@ -1,14 +1,14 @@
 {
-  "name": "meglertip-admin-backend",
+  "name": "advokattipset-admin-backend",
   "version": "1.0.0",
   "description": "Node api with mongodb database",
-  "homepage": "https://github.com/satnamsinghvanced/Meglertip-admin-backend#readme",
+  "homepage": "https://github.com/satnamsinghvanced/advokattipset-admin-backend#readme",
   "bugs": {
-    "url": "https://github.com/satnamsinghvanced/Meglertip-admin-backend/issues"
+    "url": "https://github.com/satnamsinghvanced/advokattipset-admin-backend/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/satnamsinghvanced/Meglertip-admin-backend.git"
+    "url": "git+https://github.com/satnamsinghvanced/advokattipset-admin-backend.git"
   },
   "license": "ISC",
   "author": "",
