@@ -86,7 +86,6 @@ exports.updatePrivacyPolicy = async (req, res) => {
 
     res.status(200).json({
       success: true,
-<<<<<<< HEAD
       message: id === "new" ? "Privacy Policy created successfully." : "Privacy Policy updated successfully.",
       data: result,
     });
@@ -98,16 +97,6 @@ exports.updatePrivacyPolicy = async (req, res) => {
     res.status(500).json({ success: false, message: err.message });
   }
 };
-=======
-      message: "Privacy Policy updated successfully.",
-      data: updated,
-    });
-  } catch (err) {
-    res.status(500).json({ success: false, message: err.message });
-  }
-};
-
->>>>>>> 14afc00c888a9d7882556f9acaaeeef36249d84f
 exports.deletePrivacyPolicy = async (req, res) => {
   try {
     const deleted = await PrivacyPolicy.findByIdAndDelete(req.params.id);
